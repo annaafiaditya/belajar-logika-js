@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //penjumlahan 2 angka
+        let angka = 22;
+        let angka2 = 89;
+
+        let penjumlahan = angka + angka2;
+
+        console.log(penjumlahan);
+
+
+
+        // jam ke menit dan detik
+        let jam = 2;
+        let menit = 60;
+        let detik = 3600;
+
+        let hitung = jam * menit;
+        let hitung2 = jam * detik;
+
+        console.log(`jadi ${jam} jam itu ${hitung} menit dan ${hitung2} detik`)
+
+
+
+        // kg ke gram 
+        let kg = 7;
+        let konver = 1000;
+
+        let gram = kg * konver;
+
+        console.log(`${gram} gram`)
+
+
+
+        // km ke m
+        let km = 3;
+        
+        let meter = km * konver;
+
+        console.log(meter + ` ` +`meter`)
+
+
+
+        //diskon 10% untuk 3 barang >= 100.000
+        let barang1 = 20000;
+        let barang2 = 70000;
+        let barang3 = 30000;
+
+        let jumlah = barang1 + barang2 + barang3;
+        
+        
+        if (jumlah >= 100000) {
+            diskon = jumlah * (10/100);
+            total = jumlah - diskon;
+        }
+        else {
+            total = jumlah;
+        }
+        
+        console.log(`harga yang harus di bayar RP.${total}`)
+
+
+
+        // jam lembur
+        let jamlembur = 6;
+
+        if (jamlembur < 6) {
+            gaji = "Rp.100.000";
+        }
+        else if (jamlembur == 6) {
+            gaji = "Rp.200.000";
+        }
+        else {
+            gaji = "Rp.300.000";
+        }
+
+        console.log(`jam lembur ${jamlembur} jam akan mendapankan gaji ${gaji}`)
+
+
+
+        // pintu air
+        let air = 630;
+
+        if (air <= 500) {
+            kondisi = "AMAN";
+        }
+        else if (air <= 600) {
+            kondisi = "WASPADA";
+        }
+        else if (air <= 650) {
+            kondisi = "SIAGA 2";
+        }
+        else if (air >= 650) {
+            kondisi = "SIAGA 1";
+        }
+
+        console.log(`kondisi pintu air ${kondisi}`)
+    </script>
+</body>
+</html>
